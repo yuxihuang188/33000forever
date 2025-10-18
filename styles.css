@@ -1,0 +1,80 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background Gradient */
+body {
+  background: linear-gradient(135deg, #f7a7c6, #f6bfbf);
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container for the main content */
+.container {
+  text-align: center;
+}
+
+/* Title Styling */
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Message Styling */
+.message {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 20px;
+  animation: fadeIn 3s ease-in-out;
+}
+
+/* Balloon Animations */
+.balloon {
+  width: 50px;
+  height: 80px;
+  background-color: #ffcc00;
+  border-radius: 50%;
+  margin: 10px;
+  animation: float 3s infinite ease-in-out;
+}
+
+.balloon:nth-child(2) {
+  background-color: #ff66b2;
+  animation-delay: 1s;
+}
+
+.balloon:nth-child(3) {
+  background-color: #00cc99;
+  animation-delay: 2s;
+}
+
+/* Balloon Floating Animation */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

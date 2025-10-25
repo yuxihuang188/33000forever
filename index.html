@@ -1,18 +1,80 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>祝闫华晨生日快乐！</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Happy Birthday 💫</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;600&display=swap');
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #faf7f5, #e8e2de);
+      color: #222;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5em;
+      margin-top: 15vh;
+      animation: fadeIn 2s ease-out;
+    }
+
+    p {
+      max-width: 650px;
+      margin: 2em auto;
+      line-height: 1.8;
+      font-size: 1.1em;
+      opacity: 0;
+      animation: fadeUp 2.5s ease forwards;
+      animation-delay: 1s;
+    }
+
+    .heart {
+      color: #d6727a;
+      font-size: 1.3em;
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 2em;
+      width: 100%;
+      font-size: 0.9em;
+      color: #555;
+      opacity: 0;
+      animation: fadeUp 2.5s ease forwards;
+      animation-delay: 2s;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1 class="title">生日快乐！🎉</h1>
-    <p class="message">祝你天天开心</p>
-    <div class="balloon"></div>
-    <div class="balloon"></div>
-    <div class="balloon"></div>
+
+  <h1>Happy Birthday ✨</h1>
+
+  <p>
+    在这一天，愿你的世界温柔如初，<br>
+    愿所有的光与爱都如期而至。<br><br>
+    时间流转不息，而你始终是我心中最温暖的那一隅。<br>
+    愿往后的岁月，依旧有笑、有梦、有方向。<br><br>
+    <span class="heart">♥</span>
+  </p>
+
+  <div class="footer">
+    From Yuxi · Forever 33000 · 2025
   </div>
+
 </body>
 </html>
